@@ -1,0 +1,5 @@
+${user};${pass}
+test;SuperSecretPassword!
+tomsmith;invalid
+test;invalid
+tomsmith;SuperSecretPassword!

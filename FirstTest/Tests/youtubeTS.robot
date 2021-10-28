@@ -1,0 +1,31 @@
+*** Settings ***
+Library    SeleniumLibrary
+
+*** Variables ***
+${URL}    https://www.youtube.com/
+${BROWSER}    chrome
+
+*** keywords ***
+Initialize
+    Open Browser    ${URL}    ${BROWSER}
+    Maximize Browser Window
+    
+TearDown
+    Sleep    3s
+    Close Browser
+       
+
+*** Test Cases ***
+Youtube demo
+    Initialize
+    Set Selenium Implicit Wait    10s
+    Set Selenium Timeout    10s
+    Wait Until Element Is Visible    xpath://input[@id='search']    
+    Input Text    xpath://input[@id='search']    Stay    
+    Click Button    id:search-icon-legacy
+    Click Element    xpath://ytd-video-renderer//div//a[@id='thumbnail']        
+
+
+
+
+
