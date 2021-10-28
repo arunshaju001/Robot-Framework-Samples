@@ -1,0 +1,89 @@
+XPATH examples:
+
+/html/body/div[2]/div/div/form/div[1]/div/input
+//input[@id="username"]
+ 
+
+//input[@id='username']
+ 
+//input[@id='username' and @type='text']  
+//input[@name='username' and @type='text'] 
+ 
+//tagname[@attribute=attributevalue]
+ 
+//button[@class='radius']
+ 
+//div[@class='large-6 small-12 columns']
+ 
+
+using index
+//div[@class='form-group'][2]
+ 
+Using contains
+//span[contains(text(), 'Sign up ')]
+ 
+ 
+productid 101
+101item_000111222
+101item_000022111
+ 
+//input[starts-with(@id, "pass")]
+ 
+//span[starts-with(@id, "101item_")]
+ 
+//span[text() = 'Sign up with Google']
+ 
+Chained xpath
+//ul[@class='nav navbar-nav navbar-right']//li[@class='login']
+ 
+
+To select all input following current elem
+//input[@name='email']//following::input
+ 
+To select second input following current elem
+//input[@name='email']//following::input[2]
+ 
+//li[@class='dropdown rs-dropdown']//following-sibling::li[1]
+ 
+preceding
+//input[@name='email']//preceding::input
+ 
+//input[@name='email']//preceding::input[1]
+ 
+//li[@class='dropdown rs-dropdown']//preceding-sibling::li[1]
+
+
+CSS Selector
+class
+.radius
+button.class
+ 
+id
+#username
+input#username
+ 
+input[type=text]
+input[name=username]
+ 
+.large-6.small-12
+ 
+parent .row with children .large-12
+.row .large-12
+ 
+div,input
+ 
+starting with
+a[href^="https"]
+ 
+ending with
+a[href$="internet"]
+ 
+a[href*="tour"]
+ 
+form.form > div.form-group
+form.form > div.form-group.password-group
+ 
+
+ul.nav li.login
+ul.nav li.dropdown.rs-dropdown
+ul.nav li:nth-child(3)
