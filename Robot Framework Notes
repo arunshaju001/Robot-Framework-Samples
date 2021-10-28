@@ -1,0 +1,34 @@
+Robot Framework installation
+
+Check Python Version above 3
+pip3 install robotframework==3.2.2
+pip3 install robotframework-seleniumlibrary  (5.1.3)
+pip3 uninstall robotframework
+Check robotframework==3.2.2 version
+Check Eclipse Version
+Install Red Robot Editor from help->marketplace
+restart after installation
+window->perspective->select robot
+window->preferences->robot framework->installed framework->select 3.2.2
+file->new->robot project
+create->new folder on project called Tests.
+create new robot test suite.
+program:
+First TestCase
+    Log  Welcome
+check output log
+
+Day-2
+
+For Chrome driver - https://chromedriver.chromium.org/downloads
+Download for the same version in system (93)
+Copy the extracted file to usr/local/bin location.
+Link used for testing - https://the-internet.herokuapp.com/login
+Include selenium library for using the driver also add in the red.xml to resolve the error (use quick fix)
+Link for examples: https://robotframework.org/SeleniumLibrary/SeleniumLibrary.html
+CSS-Selector: https://www.w3schools.com/cssref/css_selectors.asp
+
+
+
+
+
